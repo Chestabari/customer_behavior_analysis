@@ -28,7 +28,6 @@ The dataset contains customer shopping behavior information, including:
 - Discount Applied
 - Previous Purchases
 - Frequency of Purchases
-The dataset was loaded into Python and also imported into PostgreSQL/MySQL/SQL Server for SQL-based analysis.
 
 
 🛠 Tools & Technologies Used
@@ -51,7 +50,8 @@ The dataset was loaded into Python and also imported into PostgreSQL/MySQL/SQL S
     - Gamma (for PPT creation)
 
 
-⚙️ Project Workflow / Steps
+⚙️ Project Workflow
+
 1️⃣ Data Loading
 - Imported CSV dataset using Pandas
 - Verified structure using .head(), .info(), .describe()
