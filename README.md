@@ -12,7 +12,6 @@ The objective was to:
 The project demonstrates skills in Python, SQL, Data Cleaning, EDA, and Data Visualization.
 
 
-
 📁 Dataset
 The dataset contains customer shopping behavior information, including:
 - Customer ID
@@ -29,7 +28,6 @@ The dataset contains customer shopping behavior information, including:
 - Discount Applied
 - Previous Purchases
 - Frequency of Purchases
-
 
 
 🛠 Tools & Technologies Used
@@ -52,8 +50,8 @@ The dataset contains customer shopping behavior information, including:
     - Gamma (for PPT creation)
 
 
-
 ⚙️ Project Workflow
+
 1️⃣ Data Loading
 - Imported CSV dataset using Pandas
 - Verified structure using .head(), .info(), .describe()
@@ -96,8 +94,6 @@ The dataset contains customer shopping behavior information, including:
 - Clean and professional UI
 - Business-focused KPIs
 - Insight-driven visualizations
-The dashboard helps stakeholders quickly understand customer behavior and revenue trends.
-
 
 
 📈 Key Results & Insights
@@ -107,7 +103,6 @@ The dashboard helps stakeholders quickly understand customer behavior and revenu
 - Analyzed discount impact on purchase amount
 - Observed preferred payment methods
 - Discovered location-based revenue trends
-These insights can support business decision-making and marketing strategy improvements.
 
 
 
@@ -123,7 +118,7 @@ pip install pandas numpy matplotlib seaborn
 ~ Run the Jupyter Notebook
 jupyter notebook
 
-Open the notebook and execute all cells
+~ Open the notebook and execute all cells
 
 🔹 SQL Analysis
 - Create a database in PostgreSQL / MySQL / SQL Server
@@ -135,7 +130,6 @@ Open the notebook and execute all cells
 - Load the dataset (or connect to SQL database)
 - Open the .pbix file
 - Refresh data if required
-
 
 
 🚀 Skills Demonstrated
