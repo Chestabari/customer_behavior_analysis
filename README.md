@@ -12,6 +12,7 @@ The objective was to:
 The project demonstrates skills in Python, SQL, Data Cleaning, EDA, and Data Visualization.
 
 
+
 📁 Dataset
 The dataset contains customer shopping behavior information, including:
 - Customer ID
@@ -28,6 +29,7 @@ The dataset contains customer shopping behavior information, including:
 - Discount Applied
 - Previous Purchases
 - Frequency of Purchases
+
 
 
 🛠 Tools & Technologies Used
@@ -50,8 +52,8 @@ The dataset contains customer shopping behavior information, including:
     - Gamma (for PPT creation)
 
 
-⚙️ Project Workflow
 
+⚙️ Project Workflow
 1️⃣ Data Loading
 - Imported CSV dataset using Pandas
 - Verified structure using .head(), .info(), .describe()
@@ -76,14 +78,6 @@ The dataset contains customer shopping behavior information, including:
 - MySQL
 - SQL Server
 
-Performed:
-Aggregations (SUM, AVG, COUNT)
-GROUP BY analysis
-JOIN operations
-Filtering with WHERE clauses
-Ranking and sorting
-Business-driven queries (Top locations, best-selling categories, etc.)
-
 5️⃣ Dashboard Development (Power BI)
 - Created an interactive dashboard including:
 - KPI Cards (Total Revenue, Average Purchase, Total Customers)
@@ -95,6 +89,7 @@ Business-driven queries (Top locations, best-selling categories, etc.)
 - Filters/Slicers for dynamic exploration
 
 
+
 📊 Dashboard Features
 - Interactive filters
 - Drill-down capability
@@ -102,6 +97,7 @@ Business-driven queries (Top locations, best-selling categories, etc.)
 - Business-focused KPIs
 - Insight-driven visualizations
 The dashboard helps stakeholders quickly understand customer behavior and revenue trends.
+
 
 
 📈 Key Results & Insights
@@ -112,6 +108,7 @@ The dashboard helps stakeholders quickly understand customer behavior and revenu
 - Observed preferred payment methods
 - Discovered location-based revenue trends
 These insights can support business decision-making and marketing strategy improvements.
+
 
 
 ▶️ How to Run the Project
@@ -138,6 +135,7 @@ Open the notebook and execute all cells
 - Load the dataset (or connect to SQL database)
 - Open the .pbix file
 - Refresh data if required
+
 
 
 🚀 Skills Demonstrated
