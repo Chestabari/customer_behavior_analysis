@@ -5,18 +5,15 @@ Data analytics project showcasing customer behavior analysis using Python, SQL a
 This project focuses on performing end-to-end data analytics on a customer shopping behavior dataset.
 
 The objective was to:
-
 - Analyze customer purchasing patterns
 - Identify trends and insights
 - Build an interactive Power BI dashboard
 - Generate a professional analytical report and presentation
-
 The project demonstrates skills in Python, SQL, Data Cleaning, EDA, and Data Visualization.
 
 
 📁 Dataset
 The dataset contains customer shopping behavior information, including:
-
 - Customer ID
 - Age
 - Gender
@@ -35,7 +32,6 @@ The dataset was loaded into Python and also imported into PostgreSQL/MySQL/SQL S
 
 
 🛠 Tools & Technologies Used
-
 1. Python
    - Pandas
    - NumPy
@@ -53,7 +49,6 @@ The dataset was loaded into Python and also imported into PostgreSQL/MySQL/SQL S
 4. Reporting & Presentation
     - Microsoft Word / PDF Report
     - Gamma (for PPT creation)
-
 
 
 ⚙️ Project Workflow / Steps
@@ -100,117 +95,57 @@ Business-driven queries (Top locations, best-selling categories, etc.)
 - Filters/Slicers for dynamic exploration
 
 
-
-
 📊 Dashboard Features
-
-Interactive filters
-
-Drill-down capability
-
-Clean and professional UI
-
-Business-focused KPIs
-
-Insight-driven visualizations
-
+- Interactive filters
+- Drill-down capability
+- Clean and professional UI
+- Business-focused KPIs
+- Insight-driven visualizations
 The dashboard helps stakeholders quickly understand customer behavior and revenue trends.
 
+
 📈 Key Results & Insights
-
-Identified top-performing product categories
-
-Found seasonal purchasing patterns
-
-Determined high-revenue customer segments
-
-Analyzed discount impact on purchase amount
-
-Observed preferred payment methods
-
-Discovered location-based revenue trends
-
+- Identified top-performing product categories
+- Found seasonal purchasing patterns
+- Determined high-revenue customer segments
+- Analyzed discount impact on purchase amount
+- Observed preferred payment methods
+- Discovered location-based revenue trends
 These insights can support business decision-making and marketing strategy improvements.
 
-📄 Report & Presentation
-
-Created a structured analytical report summarizing:
-
-Objectives
-
-Methodology
-
-Findings
-
-Business recommendations
-
-Designed a professional PPT using Gamma including:
-
-Problem Statement
-
-Data Analysis
-
-Dashboard Screenshots
-
-Insights
-
-Conclusion
 
 ▶️ How to Run the Project
+
 🔹 Python Analysis
-
-Clone the repository
-
+~ Clone the repository
 git clone <repository-link>
 
-Install required libraries
-
+~ Install required libraries
 pip install pandas numpy matplotlib seaborn
 
-Run the Jupyter Notebook
-
+~ Run the Jupyter Notebook
 jupyter notebook
 
 Open the notebook and execute all cells
 
 🔹 SQL Analysis
-
-Create a database in PostgreSQL / MySQL / SQL Server
-
-Import the dataset into a table
-
-Run the SQL queries provided in the /sql folder
+- Create a database in PostgreSQL / MySQL / SQL Server
+- Import the dataset into a table
+- Run the SQL queries provided in the /sql folder
 
 🔹 Power BI Dashboard
+- Open Power BI Desktop
+- Load the dataset (or connect to SQL database)
+- Open the .pbix file
+- Refresh data if required
 
-Open Power BI Desktop
-
-Load the dataset (or connect to SQL database)
-
-Open the .pbix file
-
-Refresh data if required
 
 🚀 Skills Demonstrated
-
-Data Cleaning & Preprocessing
-
-Exploratory Data Analysis
-
-SQL Query Writing
-
-Database Handling
-
-Business Insight Generation
-
-Dashboard Design
-
-Data Storytelling
-
-Presentation Skills
-
-📌 Conclusion
-
-This project showcases a complete Data Analytics lifecycle, from raw data to actionable insights and business reporting.
-
-It highlights practical skills required for a Data Analyst role, including Python, SQL, Power BI, and analytical thinking.
+1. Data Cleaning & Preprocessing
+2. Exploratory Data Analysis
+3. SQL Query Writing
+4. Database Handling
+5. Business Insight Generation
+6. Dashboard Design
+7. Data Storytelling
+8. Presentation Skills
