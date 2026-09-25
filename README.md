@@ -1,5 +1,19 @@
 # Customer Shopping Behavior Analysis
 
+📌 Project Overview
+📊 Dashboard
+🛠 Tech Stack
+🔄 Project Workflow
+🐍 Python Analysis
+🗄 SQL Analysis
+📈 Key Insights
+💡 Business Recommendations
+📁 Project Structure
+▶️ How to Run
+
+
+Customer Shopping Behavior Analysis
+
 This project is about analyzing customer shopping data using Python, PostgreSQL, and Power BI.
 
 I used Python for data cleaning and analysis, PostgreSQL for SQL queries, and Power BI to create an interactive dashboard. The project focuses on customer purchasing behavior, product categories, discounts, payment methods, and other shopping patterns.
