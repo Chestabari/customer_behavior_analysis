@@ -1,15 +1,15 @@
 # Customer Shopping Behavior Analysis
 
-📌 Project Overview
-📊 Dashboard
-🛠 Tech Stack
-🔄 Project Workflow
-🐍 Python Analysis
-🗄 SQL Analysis
-📈 Key Insights
-💡 Business Recommendations
-📁 Project Structure
-▶️ How to Run
+Project Overview
+Dashboard
+Tech Stack
+Project Workflow
+Python Analysis
+SQL Analysis
+Key Insights
+Business Recommendations
+Project Structure
+How to Run
 
 
 Customer Shopping Behavior Analysis
