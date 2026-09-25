@@ -1,34 +1,32 @@
 # Customer Shopping Behavior Analysis
 
-Project Overview
-Dashboard
-Tech Stack
-Project Workflow
-Python Analysis
-SQL Analysis
-Key Insights
-Business Recommendations
-Project Structure
-How to Run
+-Project Overview
+-Dashboard
+-Tech Stack
+-Project Workflow
+-Python Analysis
+-SQL Analysis
+-Key Insights
+-Business Recommendations
+-Project Structure
+-How to Run
 
-
-Customer Shopping Behavior Analysis
 
 This project is about analyzing customer shopping data using Python, PostgreSQL, and Power BI.
 
 I used Python for data cleaning and analysis, PostgreSQL for SQL queries, and Power BI to create an interactive dashboard. The project focuses on customer purchasing behavior, product categories, discounts, payment methods, and other shopping patterns.
 
-## 🎯 Business Objective
+##  Business Objective
 
 The main goal of this project was to understand customer shopping behavior and find useful patterns from the available data.
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 * **Python** – Pandas, NumPy, Matplotlib
 * **PostgreSQL** – SQL queries and data analysis
 * **Power BI** – Dashboard and data visualization
 
-## 🔄 Project Workflow
+##  Project Workflow
 
 Raw Customer Data
        ↓
@@ -43,7 +41,7 @@ Dashboard & KPIs
        ↓
 Insights
 
-## 🐍 Python Analysis
+##  Python Analysis
 
 I used Python to clean and explore the customer shopping dataset.
 
@@ -57,7 +55,7 @@ Some of the main steps were:
 * Performed exploratory data analysis
 * Analyzed customer purchasing patterns
 
-## 🗄️ SQL Analysis
+##  SQL Analysis
 
 I used PostgreSQL to analyze the cleaned data and answer different business questions.
 
@@ -70,7 +68,7 @@ The analysis included:
 * Discounts and subscriptions
 * Location based analysis
 
-## 📊 Power BI Dashboard
+##  Power BI Dashboard
 
 I created an interactive Power BI dashboard to visualize the main findings from the analysis.
 
@@ -84,7 +82,7 @@ The dashboard includes:
 * Customer behavior
 * Interactive filters and slicers
 
-## 📈 Key Insights
+##  Key Insights
 
 The analysis helped identify:
 
@@ -95,7 +93,7 @@ The analysis helped identify:
 * Discount and subscription patterns
 * Differences in purchasing behavior by location
 
-## 💡 Business Recommendations
+##  Business Recommendations
 
 Based on the analysis:
 
@@ -105,7 +103,7 @@ Based on the analysis:
 * Consider seasonal trends while planning sales
 * Use customer segments for more focused marketing
 
-## 📁 Project Structure
+##  Project Structure
 
 Customer Shopping Behavior Analysis
 │
@@ -117,7 +115,7 @@ Customer Shopping Behavior Analysis
 ├── Analysis Report
 └── Project Presentation
 
-## ▶️ How to Run
+##  How to Run
 
 ### Python
 
@@ -141,7 +139,7 @@ Customer Shopping Behavior Analysis
 <img width="803" height="437" alt="image" src="https://github.com/user-attachments/assets/1715cecd-afe3-4c47-b23e-56b792e57376" />
 
 
-## 🚀 Skills Demonstrated
+##  Skills Demonstrated
 
 * Python
 * Pandas
