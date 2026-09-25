@@ -124,6 +124,9 @@ Customer Shopping Behavior Analysis
 2. Refresh the data if required.
 3. Open the dashboard and explore the visuals.
 
+<img width="803" height="437" alt="image" src="https://github.com/user-attachments/assets/1715cecd-afe3-4c47-b23e-56b792e57376" />
+
+
 ## 🚀 Skills Demonstrated
 
 * Python
