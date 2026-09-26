@@ -136,7 +136,7 @@ Customer Shopping Behavior Analysis
 2. Refresh the data if required.
 3. Open the dashboard and explore the visuals.
 
-<img width="803" height="437" alt="image" src="https://github.com/user-attachments/assets/1715cecd-afe3-4c47-b23e-56b792e57376" />
+<img width="852" height="532" alt="powerbi dashboard" src="https://github.com/user-attachments/assets/474b97b8-9ae6-465a-b490-9fb7783cd68c" />
 
 
 ##  Skills Demonstrated
