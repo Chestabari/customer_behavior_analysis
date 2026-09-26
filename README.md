@@ -70,7 +70,8 @@ The project includes both a Power BI dashboard and a Streamlit dashboard.
 
 The Power BI dashboard provides interactive KPIs and visualizations to explore customer behavior, sales patterns, categories, locations, payment methods, and other business metrics.
 
-![Power BI Dashboard](dashboard.png)
+<img width="852" height="532" alt="powerbi dashboard" src="https://github.com/user-attachments/assets/d65a3f6c-d951-4771-ae6e-2a28a8e56ba1" />
+
 
 ### Dashboard Features
 
