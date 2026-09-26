@@ -1,22 +1,15 @@
-```python
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# --------------------------------------------------
 # Page Configuration
-# --------------------------------------------------
-
 st.set_page_config(
     page_title="Customer Shopping Behavior Analysis",
     page_icon="🛍️",
     layout="wide"
 )
 
-# --------------------------------------------------
 # Load Dataset
-# --------------------------------------------------
-
 @st.cache_data
 def load_data():
     df = pd.read_csv("customer_shopping_behavior.csv")
@@ -25,35 +18,22 @@ def load_data():
     df.columns = df.columns.str.strip()
 
     # Convert numeric columns
-    df["Purchase Amount (USD)"] = pd.to_numeric(
-        df["Purchase Amount (USD)"],
-        errors="coerce"
-    )
+    numeric_columns = [
+        "Purchase Amount (USD)",
+        "Review Rating",
+        "Age",
+        "Previous Purchases"
+    ]
 
-    df["Review Rating"] = pd.to_numeric(
-        df["Review Rating"],
-        errors="coerce"
-    )
-
-    df["Age"] = pd.to_numeric(
-        df["Age"],
-        errors="coerce"
-    )
-
-    df["Previous Purchases"] = pd.to_numeric(
-        df["Previous Purchases"],
-        errors="coerce"
-    )
+    for column in numeric_columns:
+        df[column] = pd.to_numeric(df[column], errors="coerce")
 
     return df
 
 
 df = load_data()
 
-# --------------------------------------------------
 # Title
-# --------------------------------------------------
-
 st.title("🛍️ Customer Shopping Behavior Analysis")
 
 st.markdown(
@@ -63,13 +43,9 @@ st.markdown(
     """
 )
 
-# --------------------------------------------------
 # Sidebar Filters
-# --------------------------------------------------
-
 st.sidebar.header("🔎 Filters")
 
-# Category
 categories = sorted(df["Category"].dropna().unique())
 
 selected_categories = st.sidebar.multiselect(
@@ -78,7 +54,6 @@ selected_categories = st.sidebar.multiselect(
     default=categories
 )
 
-# Gender
 genders = sorted(df["Gender"].dropna().unique())
 
 selected_genders = st.sidebar.multiselect(
@@ -87,7 +62,6 @@ selected_genders = st.sidebar.multiselect(
     default=genders
 )
 
-# Season
 seasons = sorted(df["Season"].dropna().unique())
 
 selected_seasons = st.sidebar.multiselect(
@@ -96,7 +70,6 @@ selected_seasons = st.sidebar.multiselect(
     default=seasons
 )
 
-# Subscription
 subscriptions = sorted(
     df["Subscription Status"].dropna().unique()
 )
@@ -107,7 +80,6 @@ selected_subscriptions = st.sidebar.multiselect(
     default=subscriptions
 )
 
-# Location
 locations = sorted(df["Location"].dropna().unique())
 
 selected_locations = st.sidebar.multiselect(
@@ -116,10 +88,7 @@ selected_locations = st.sidebar.multiselect(
     default=locations
 )
 
-# --------------------------------------------------
 # Apply Filters
-# --------------------------------------------------
-
 filtered_df = df[
     df["Category"].isin(selected_categories)
     & df["Gender"].isin(selected_genders)
@@ -128,23 +97,15 @@ filtered_df = df[
     & df["Location"].isin(selected_locations)
 ]
 
-# --------------------------------------------------
 # Check Filter Result
-# --------------------------------------------------
-
 if filtered_df.empty:
-
     st.warning(
         "No data available for the selected filters. "
         "Please change your filter selection."
     )
-
     st.stop()
 
-# --------------------------------------------------
 # KPI Calculations
-# --------------------------------------------------
-
 total_customers = filtered_df["Customer ID"].nunique()
 
 total_purchase = filtered_df["Purchase Amount (USD)"].sum()
@@ -153,10 +114,7 @@ average_purchase = filtered_df["Purchase Amount (USD)"].mean()
 
 average_rating = filtered_df["Review Rating"].mean()
 
-# --------------------------------------------------
 # KPI Cards
-# --------------------------------------------------
-
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
@@ -185,10 +143,7 @@ with col4:
 
 st.divider()
 
-# --------------------------------------------------
 # Category Analysis
-# --------------------------------------------------
-
 st.subheader("📊 Purchase Amount by Category")
 
 category_data = (
@@ -217,10 +172,7 @@ st.plotly_chart(
     use_container_width=True
 )
 
-# --------------------------------------------------
 # Product Analysis
-# --------------------------------------------------
-
 st.subheader("🛍️ Product Performance")
 
 product_data = (
@@ -250,14 +202,10 @@ st.plotly_chart(
     use_container_width=True
 )
 
-# --------------------------------------------------
-# Season Analysis
-# --------------------------------------------------
-
+# Season and Gender Analysis
 col1, col2 = st.columns(2)
 
 with col1:
-
     season_data = (
         filtered_df
         .groupby("Season", as_index=False)["Purchase Amount (USD)"]
@@ -277,12 +225,7 @@ with col1:
         use_container_width=True
     )
 
-# --------------------------------------------------
-# Gender Analysis
-# --------------------------------------------------
-
 with col2:
-
     gender_data = (
         filtered_df
         .groupby("Gender", as_index=False)["Purchase Amount (USD)"]
@@ -302,10 +245,7 @@ with col2:
         use_container_width=True
     )
 
-# --------------------------------------------------
 # Payment Method
-# --------------------------------------------------
-
 st.subheader("💳 Payment Method Analysis")
 
 payment_data = (
@@ -339,14 +279,10 @@ st.plotly_chart(
     use_container_width=True
 )
 
-# --------------------------------------------------
-# Subscription Analysis
-# --------------------------------------------------
-
+# Subscription and Discount Analysis
 col1, col2 = st.columns(2)
 
 with col1:
-
     subscription_data = (
         filtered_df["Subscription Status"]
         .value_counts()
@@ -371,12 +307,7 @@ with col1:
         use_container_width=True
     )
 
-# --------------------------------------------------
-# Discount Analysis
-# --------------------------------------------------
-
 with col2:
-
     discount_data = (
         filtered_df["Discount Applied"]
         .value_counts()
@@ -406,10 +337,7 @@ with col2:
         use_container_width=True
     )
 
-# --------------------------------------------------
 # Location Analysis
-# --------------------------------------------------
-
 st.subheader("📍 Purchase Amount by Location")
 
 location_data = (
@@ -442,10 +370,7 @@ st.plotly_chart(
     use_container_width=True
 )
 
-# --------------------------------------------------
 # Purchase Frequency
-# --------------------------------------------------
-
 st.subheader("🔁 Purchase Frequency")
 
 frequency_data = (
@@ -477,76 +402,17 @@ st.plotly_chart(
     use_container_width=True
 )
 
-# --------------------------------------------------
 # Customer Data
-# --------------------------------------------------
-
 with st.expander("📋 View Customer Data"):
-
     st.dataframe(
         filtered_df,
         use_container_width=True
     )
 
-# --------------------------------------------------
 # Footer
-# --------------------------------------------------
-
 st.divider()
 
 st.caption(
     "Customer Shopping Behavior Analysis | "
     "Python • PostgreSQL • Power BI • Streamlit"
 )
-```
-
-### Then create `requirements.txt`
-
-Create another file in the same GitHub repository called **`requirements.txt`**:
-
-```text
-streamlit
-pandas
-plotly
-```
-
-### Your GitHub structure will become
-
-```text
-customer_behavior_analysis/
-│
-├── app.py                         ← NEW
-├── requirements.txt               ← NEW
-├── customer_shopping_behavior.csv
-├── customer_behavior_python_powerbi.ipynb
-├── customer_behavior_postgressql.sql
-├── customer_behavior_dashboard.pbix
-├── README.md
-└── ...
-```
-
-### Then deploy it
-
-Once both files are on GitHub:
-
-1. Go to **Streamlit Community Cloud**.
-2. Sign in with GitHub.
-3. Click **Create app**.
-4. Select your repository:
-   `Chestabari/customer_behavior_analysis`
-5. Select branch: **`main`**
-6. For the main file, enter:
-   **`app.py`**
-7. Click **Deploy**.
-
-Streamlit Community Cloud supports deploying apps directly from GitHub repositories.
-
-You'll get a URL similar to:
-
-```text
-https://customer-behavior-analysis.streamlit.app
-```
-
-You can then put that link in your **resume, LinkedIn, and GitHub README**.
-
-**One thing to note:** this Streamlit version is a Python recreation of your Power BI dashboard. Your original `.pbix` should stay in the repository because it demonstrates your Power BI work; the Streamlit app gives the interviewer a convenient browser-based interactive version.
