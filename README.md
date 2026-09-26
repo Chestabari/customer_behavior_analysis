@@ -1,99 +1,102 @@
 # Customer Shopping Behavior Analysis
 
--Project Overview
--Dashboard
--Tech Stack
--Project Workflow
--Python Analysis
--SQL Analysis
--Key Insights
--Business Recommendations
--Project Structure
--How to Run
+An end-to-end data analytics project analyzing customer shopping behavior using Python, PostgreSQL, Power BI, and Streamlit.
 
+The project focuses on customer purchasing patterns, product categories, discounts, payment methods, subscriptions, locations, and other shopping trends.
 
-This project is about analyzing customer shopping data using Python, PostgreSQL, and Power BI.
+## Business Objective
 
-I used Python for data cleaning and analysis, PostgreSQL for SQL queries, and Power BI to create an interactive dashboard. The project focuses on customer purchasing behavior, product categories, discounts, payment methods, and other shopping patterns.
+The main goal of this project was to analyze customer shopping data, identify useful patterns, and generate insights that can support data-driven business decisions.
 
-##  Business Objective
-
-The main goal of this project was to understand customer shopping behavior and find useful patterns from the available data.
-
-##  Tools & Technologies
+## Tools & Technologies
 
 * **Python** – Pandas, NumPy, Matplotlib
 * **PostgreSQL** – SQL queries and data analysis
 * **Power BI** – Dashboard and data visualization
+* **Streamlit** – Interactive web dashboard
+* **Plotly** – Interactive charts and visualizations
 
-##  Project Workflow
+## Project Workflow
 
 Raw Customer Data
-       ↓
+        ↓
 Python / Pandas
 Data Cleaning & Analysis
-       ↓
+        ↓
 PostgreSQL
-SQL Analysis
-       ↓
-Power BI
-Dashboard & KPIs
-       ↓
-Insights
+SQL Business Analysis
+        ↓
+Power BI & Streamlit
+Dashboard & Visualization
+        ↓
+Business Insights
 
-##  Python Analysis
+## Python Analysis
 
-I used Python to clean and explore the customer shopping dataset.
+Python was used to clean, preprocess, and explore the customer shopping dataset.
 
-Some of the main steps were:
+Main activities included:
 
-* Loaded and explored the dataset
-* Checked missing values and duplicate records
-* Cleaned and standardized the data
-* Converted data types where required
-* Created additional columns for analysis
-* Performed exploratory data analysis
-* Analyzed customer purchasing patterns
+* Loading and exploring the dataset
+* Checking missing values and duplicate records
+* Cleaning and standardizing the data
+* Converting data types
+* Creating additional features for analysis
+* Performing exploratory data analysis
+* Analyzing customer purchasing patterns
 
-##  SQL Analysis
+## SQL Analysis
 
-I used PostgreSQL to analyze the cleaned data and answer different business questions.
+PostgreSQL was used to perform business-focused analysis and answer different questions related to customer behavior and sales.
 
 The analysis included:
 
-* Customer segments
+* Customer segmentation
 * Product and category performance
 * Customer purchasing trends
 * Payment methods
 * Discounts and subscriptions
-* Location based analysis
+* Location-based analysis
 
-##  Power BI Dashboard
+## Dashboard
 
-I created an interactive Power BI dashboard to visualize the main findings from the analysis.
+The project includes both a Power BI dashboard and a Streamlit dashboard.
 
-The dashboard includes:
+### 🌐 Live Interactive Dashboard
+
+[View Live Streamlit Dashboard](https://customerbehavioranalysis-czqebs3ycqoh9co6knmp4k.streamlit.app/)
+
+### 📊 Power BI Dashboard
+
+The Power BI dashboard provides interactive KPIs and visualizations to explore customer behavior, sales patterns, categories, locations, payment methods, and other business metrics.
+
+![Power BI Dashboard](dashboard.png)
+
+### Dashboard Features
 
 * Total customers and purchase KPIs
 * Category analysis
+* Product performance
 * Location analysis
 * Seasonal trends
 * Payment method analysis
-* Customer behavior
+* Subscription analysis
+* Discount analysis
+* Customer purchase frequency
 * Interactive filters and slicers
 
-##  Key Insights
+## Key Insights
 
 The analysis helped identify:
 
 * Customer purchasing patterns across different categories
-* Top performing products and categories
+* Top-performing products and categories
 * Seasonal changes in purchasing behavior
 * Popular payment methods
 * Discount and subscription patterns
 * Differences in purchasing behavior by location
 
-##  Business Recommendations
+## Business Recommendations
 
 Based on the analysis:
 
@@ -103,19 +106,24 @@ Based on the analysis:
 * Consider seasonal trends while planning sales
 * Use customer segments for more focused marketing
 
-##  Project Structure
+## Project Structure
 
-Customer Shopping Behavior Analysis
+```text
+customer_behavior_analysis/
 │
-├── Dataset
-├── Python Notebook
-├── SQL Queries
-├── Power BI Dashboard
-├── Business Problem Document
-├── Analysis Report
-└── Project Presentation
+├── app.py
+├── requirements.txt
+├── customer_shopping_behavior.csv
+├── customer_behavior_python_powerbi.ipynb
+├── customer_behavior_postgressql.sql
+├── customer_behavior_dashboard.pbix
+├── Business Problem Document.pdf
+├── Customer Shopping Behavior Analysis Report.pdf
+├── customer_behavior_PPT.pdf
+└── README.md
+```
 
-##  How to Run
+## How to Run
 
 ### Python
 
@@ -127,27 +135,47 @@ Customer Shopping Behavior Analysis
 ### PostgreSQL
 
 1. Create a PostgreSQL database.
-2. Import the dataset.
+2. Import the customer shopping dataset.
 3. Run the SQL queries provided in the project.
 
 ### Power BI
 
 1. Open the `.pbix` file in Power BI Desktop.
 2. Refresh the data if required.
-3. Open the dashboard and explore the visuals.
+3. Explore the dashboard and visualizations.
 
-<img width="852" height="532" alt="powerbi dashboard" src="https://github.com/user-attachments/assets/474b97b8-9ae6-465a-b490-9fb7783cd68c" />
+### Streamlit
 
+1. Install the required libraries:
 
-##  Skills Demonstrated
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the Streamlit application:
+
+```bash
+streamlit run app.py
+```
+
+The live version of the dashboard is also available here:
+
+[View Live Streamlit Dashboard](https://customerbehavioranalysis-czqebs3ycqoh9co6knmp4k.streamlit.app/)
+
+## Skills Demonstrated
 
 * Python
 * Pandas
+* NumPy
 * SQL
 * PostgreSQL
 * Power BI
+* Streamlit
+* Plotly
 * Data Cleaning
 * Exploratory Data Analysis
 * Data Visualization
 * Business Analysis
+* Dashboard Development
+* Business Insights
 
